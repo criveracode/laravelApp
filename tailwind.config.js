@@ -1,27 +1,7 @@
-# Instalamos las dependencias
-
-    % composer install
-    % npm install
-    % npm install -D tailwindcss
-    % npx tailwindcss init
-
-# Creamos el archivo .env
-
-    % php artisan key:generate
-    % php artisan migrate
-    % php artisan migrate:refresh --seed
-
-# Corremos la app:
-
-    % npm run dev
-
-
-# En tailwind.config.js
-
 import defaultTheme from 'tailwindcss/defaultTheme';
 import forms from '@tailwindcss/forms';
 
-@type {import('tailwindcss').Config} */
+/** @type {import('tailwindcss').Config} */
 export default {
     content: [
         './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
@@ -39,3 +19,5 @@ export default {
 
     plugins: [forms],
 };
+
+
